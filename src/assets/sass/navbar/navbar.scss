@@ -1,0 +1,21 @@
+.header {
+ background-color: $darker-grey;
+ height: 100px;
+
+ .fas{
+  color: $lighter-grey;
+  font-weight: bolder;
+  font-size: 20px;
+ }
+
+}
+
+.top-bar .top-bar-left, .top-bar .top-bar-right { flex: none; }
+
+@media screen and (max-width: 500px) {
+ .top-bar .top-bar-right {
+  ul li a{
+   margin-left: 200px;
+  }
+ }
+}

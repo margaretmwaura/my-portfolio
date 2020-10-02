@@ -32,11 +32,6 @@ module.exports = {
             template: "./index.html",
             filename: './index.html'
         }),
-        new CopyPlugin({
-            patterns: [
-                { from: 'public/images', to: 'img' },
-            ],
-        }),
     ],
 
     module: {
