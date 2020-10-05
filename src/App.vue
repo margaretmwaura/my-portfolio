@@ -12,7 +12,9 @@
                 <div class="cell large-8 medium-8 small-12">
                     <div class="grid-x">
                         <div class="cell large-2 medium-2 small-0"></div>
-                        <div class="cell large-8 medium-8 small-12"><home/></div>
+                        <div class="cell large-8 medium-8 small-12">
+                            <home/>
+                        </div>
                         <div class="cell large-2 medium-2 small-0"></div>
                     </div>
                 </div>

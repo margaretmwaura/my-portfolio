@@ -1,19 +1,21 @@
 .home{
   padding-top: 20%;
   p, h1{
-    color: $lighter-grey;
+    color: var(--text-color);
     text-align: center;
+  }
+
+  .fab, .fas, .far{
+    color: var(--text-color);
+    font-size: 20px;
+    padding: 15px;
   }
 
   &_social_icons{
     padding-top: 5%;
     text-align: center;
-    .fab, .fas{
-      color: $lighter-grey;
-      font-size: 20px;
-      padding: 15px;
-    }
   }
+
 }
 
 

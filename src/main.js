@@ -5,10 +5,12 @@ import App from './App.vue'
 import VueTypedJs from 'vue-typed-js'
 
 require('./assets/sass/app.scss');
+import store from '../src/store/theme';
 Vue.use(VueTypedJs);
 Vue.config.productionTip = false;
 
 new Vue({
+  store,
   render: h => h(App),
   mounted() {
     // eslint-disable-next-line

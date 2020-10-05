@@ -8,13 +8,31 @@ html, body {
   top:0;
   right:0;
   left:0;
-  background-color: $lighter-black;
+  background-color: var(--bottom-background);
 }
 
 .main{
   height: 100%;
   width: 100%;
   &_top{
-     background-color: $black;
+     background-color: var(--top-background);
   }
+}
+
+
+.top-bar .top-bar-left, .top-bar .top-bar-right { flex: none; }
+
+
+@media screen and (max-width: 500px) {
+  .top-bar , .top-bar-right {
+    float: right;
+  }
+}
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 6s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }

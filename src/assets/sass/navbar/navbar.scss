@@ -1,22 +1,55 @@
 .header {
- background-color: $black;
+ background-color: var(--top-background);
 
 
- &_icon{
+ &_title{
   color: green;
   font-weight: bolder;
-  font-size: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-size: 1.2em;
+  padding-top: 4%;
+
+  @media screen and (max-width: 500px) {
+   padding: 0;
+  }
  }
 
  &_links{
-  color: $lighter-grey;
-  font-size: 20px;
+  color: var(--text-color);
+  font-size: 1.2em;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media screen and (max-width: 500px) {
+   padding: 0;
+ }
  }
 
+
+ &_right{
+  display:inline;
+
+  &_links{
+   float: right;
+  }
+
+  &_icon{
+   margin-top: 4%;
+   float: right;
+  }
+
+
+  @media screen and (max-width: 500px) {
+   &_links{
+    float: right;
+   }
+
+   &_icon{
+    margin-top: 8%;
+    float: left;
+   }
+  }
+
+ }
  .one{
   color: #1779ba;
  }
@@ -33,20 +66,48 @@
   color: red;
  }
 
-}
-
-.top-bar .top-bar-left, .top-bar .top-bar-right { flex: none; }
-
-@media screen and (max-width: 500px) {
- .top-bar , .top-bar-right {
-   float: right;
+ /* toggle in label designing */
+ .toggle {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 16px;
+  border-radius: 30px;
+  top: 1px;
+  background-image: linear-gradient(to right, $lighter-black, $lighter-grey)
  }
+
+ /* After slide changes .. the left value affects how far the ball goes to the left */
+ .toggle:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 12px;
+  border-radius: 30px;
+  background-color: $lighter-grey;
+  top: 1px;
+  left: 4px;
+  transition: all 0.5s;
+ }
+
+ /* Checkbox cheked effect .. the left value affects how far the ball goes to the right */
+ .checkbox:checked + .toggle::after {
+  left: 24px;
+ }
+
+ /* Checkbox cheked toggle label bg color */
+ .checkbox:checked + .toggle {
+  border: 1px solid $lighter-black;
+ }
+
+ .checkbox:checked + .toggle:after {
+  background-color: $lighter-grey;
+ }
+
+ /* Checkbox vanished */
+ .checkbox {
+  display: none;
+ }
+
 }
 
-
-.fade-enter-active, .fade-leave-active {
- transition: opacity 6s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
- opacity: 0;
-}

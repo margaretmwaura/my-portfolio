@@ -12,12 +12,14 @@
                        <br>
                        <span>mechanical keyboards</span>  </p>
                </transition>
-
                <div class="home_social_icons" v-if="show">
                    <a href="https://twitter.com/shiimwaura" class="fab fa-twitter"></a>
                    <a href="mailto:mwauramargaret1@gmail.com" class="fas fa-envelope-open-text"></a>
                    <a href="https://github.com/margaretmwaura" class="fab fa-github"></a>
                    <a href="https://www.linkedin.com/in/mwauramargaret/" class="fab fa-linkedin-in"></a>
+               </div>
+               <div class="home_footer">
+                   <p>Made with <i class="far fa-heart"></i> by Maggie Mwaura</p>
                </div>
            </div>
            <div class="cell large-1 medium-1 small-0"></div>
