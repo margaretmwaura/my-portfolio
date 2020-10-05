@@ -1,11 +1,36 @@
 .header {
- background-color: $darker-grey;
- height: 100px;
+ background-color: $black;
 
- .fas{
-  color: $lighter-grey;
+
+ &_icon{
+  color: green;
   font-weight: bolder;
   font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ }
+
+ &_links{
+  color: $lighter-grey;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ }
+
+ .one{
+  color: #1779ba;
+ }
+
+ .two{
+  color: plum;
+ }
+
+ .three{
+  color: darkblue;
+ }
+
+ .four{
+  color: red;
  }
 
 }
@@ -16,4 +41,12 @@
  .top-bar , .top-bar-right {
    float: right;
  }
+}
+
+
+.fade-enter-active, .fade-leave-active {
+ transition: opacity 6s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+ opacity: 0;
 }

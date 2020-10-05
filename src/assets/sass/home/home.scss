@@ -1,0 +1,19 @@
+.home{
+  padding-top: 20%;
+  p, h1{
+    color: $lighter-grey;
+    text-align: center;
+  }
+
+  &_social_icons{
+    padding-top: 5%;
+    text-align: center;
+    .fab, .fas{
+      color: $lighter-grey;
+      font-size: 20px;
+      padding: 15px;
+    }
+  }
+}
+
+

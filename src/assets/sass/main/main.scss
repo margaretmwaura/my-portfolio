@@ -1,0 +1,20 @@
+html, body {
+  height: 100%;
+  font-family: 'CustomFont';
+  width: 100%;
+  margin: 0;
+  padding:0;
+  bottom:0;
+  top:0;
+  right:0;
+  left:0;
+  background-color: $lighter-black;
+}
+
+.main{
+  height: 100%;
+  width: 100%;
+  &_top{
+     background-color: $black;
+  }
+}
