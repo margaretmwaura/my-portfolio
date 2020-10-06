@@ -1,6 +1,7 @@
 <template>
     <div class="about">
-        <h4>Who is Margaret Mwaura</h4>
+        <h3>Who is Margaret Mwaura ~ Maggie<span>🤔</span></h3>
+
         <p>
             Hi there, I’m Shubheksha! I love computers and really enjoy writing code.
             I’m particularly interested in distributed systems, how they work, their
