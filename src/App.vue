@@ -1,8 +1,8 @@
 <template>
     <div id="app">
-        <div class="grid-frame">
-            <div class="grid-y">
-                <div class="cell large-4 medium-4 small-12 main_top">
+        <div class="grid-frame page-container">
+            <div class="grid-y page-container_content-wrap">
+                <div class="cell large-4 medium-4 small-12 page-container_content-wrap_top">
                     <div class="grid-x">
                         <div class="cell large-2 medium-2 small-0"></div>
                         <div class="cell large-8 medium-8 small-12">
@@ -21,16 +21,9 @@
                     <div class="cell large-2 medium-2 small-0">
                     </div>
                 </div>
-                <div class="cell large-8 medium-8 small-12">
-                    <div class="grid-x">
-                        <div class="cell large-2 medium-2 small-0"></div>
-                        <div class="cell large-8 medium-8 small-12">
-                            <bottom_navbar/>
-                        </div>
-                    </div>
-                    <div class="cell large-2 medium-2 small-0">
-                    </div>
-                </div>
+            </div>
+            <div class="page-container_bottom_navbar">
+                <p>Made with <i class="far fa-heart"></i> by Maggie Mwaura</p>
             </div>
         </div>
     </div>
@@ -40,7 +33,6 @@
 
     import Navbar from "./components/navbar";
     import Home from "./components/home";
-    import bottom_navbar from "./components/bottom_navbar";
 
     export default {
         name: 'App',
@@ -51,7 +43,6 @@
         components: {
             Home,
             Navbar,
-            bottom_navbar
         }
     }
 </script>
