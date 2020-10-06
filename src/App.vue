@@ -5,7 +5,9 @@
                 <div class="cell large-4 medium-4 small-12 main_top">
                     <div class="grid-x">
                         <div class="cell large-2 medium-2 small-0"></div>
-                        <div class="cell large-8 medium-8 small-12"><navbar/></div>
+                        <div class="cell large-8 medium-8 small-12">
+                            <navbar/>
+                        </div>
                         <div class="cell large-2 medium-2 small-0"></div>
                     </div>
                 </div>
@@ -15,7 +17,18 @@
                         <div class="cell large-8 medium-8 small-12">
                             <home/>
                         </div>
+                    </div>
+                    <div class="cell large-2 medium-2 small-0">
+                    </div>
+                </div>
+                <div class="cell large-8 medium-8 small-12">
+                    <div class="grid-x">
                         <div class="cell large-2 medium-2 small-0"></div>
+                        <div class="cell large-8 medium-8 small-12">
+                            <bottom_navbar/>
+                        </div>
+                    </div>
+                    <div class="cell large-2 medium-2 small-0">
                     </div>
                 </div>
             </div>
@@ -27,6 +40,7 @@
 
     import Navbar from "./components/navbar";
     import Home from "./components/home";
+    import bottom_navbar from "./components/bottom_navbar";
 
     export default {
         name: 'App',
@@ -36,7 +50,8 @@
         methods: {},
         components: {
             Home,
-            Navbar
+            Navbar,
+            bottom_navbar
         }
     }
 </script>

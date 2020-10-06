@@ -18,9 +18,6 @@
                    <a href="https://github.com/margaretmwaura" class="fab fa-github"></a>
                    <a href="https://www.linkedin.com/in/mwauramargaret/" class="fab fa-linkedin-in"></a>
                </div>
-               <div class="home_footer">
-                   <p>Made with <i class="far fa-heart"></i> by Maggie Mwaura</p>
-               </div>
            </div>
            <div class="cell large-1 medium-1 small-0"></div>
        </div>
@@ -30,6 +27,7 @@
 <script>
     export default {
         name: "home",
+        components: { },
         data: function () {
             return {
                 show: false
