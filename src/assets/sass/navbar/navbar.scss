@@ -1,7 +1,6 @@
 .header {
  background-color: var(--top-background);
 
-
  &_title{
   color: green;
   font-weight: bolder;
@@ -13,23 +12,15 @@
   }
  }
 
- &_links{
-  color: var(--text-color);
-  font-size: 1.2em;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  @media screen and (max-width: 500px) {
-   padding: 0;
- }
- }
-
-
  &_right{
   display:inline;
 
   &_links{
    float: right;
+
+   &_routes{
+    color: var(--text-color);
+   }
   }
 
   &_icon{
