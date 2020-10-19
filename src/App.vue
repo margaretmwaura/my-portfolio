@@ -25,7 +25,7 @@
                                     </div>
                                     <div id="responsive-menu" class="header_right_links">
                                         <div class="title-bar-right" data-responsive-toggle="example-menu" data-hide-for="medium">
-                                            <button class="hamburger-icon" type="button" data-toggle="example-menu">
+                                            <button class="menu-icon" type="button" data-toggle="example-menu">
                                             </button>
                                         </div>
                                         <div class="top-bar" id="example-menu">
