@@ -7,16 +7,16 @@
                         <div class="cell large-2 medium-2 small-0"></div>
                         <div class="cell large-8 medium-8 small-12">
                             <div class="grid-x header">
-                                <div class="cell large-6 medium-6 small-5">
+                                <div class="cell large-6 medium-6 small-12">
                                     <i class="fas fa-arrow-right header_title">
                                         <span class="one"> my-portfolio :</span>
                                         <span class="two"> git </span>
                                         <span class="three">(</span>
-                                        <span class="four">home</span>
+                                        <span class="four">{{current_path}}</span>
                                         <span class="three"> )</span>
                                     </i>
                                 </div>
-                                <div class="cell large-6 medium-6 small-7 header_right">
+                                <div class="cell large-6 medium-6 small-12 header_right">
                                     <div class="header_right_icon">
                                         <p>
                                             <input type="checkbox" id="switch" class="checkbox" v-model="darkMode"/>
@@ -25,7 +25,8 @@
                                     </div>
                                     <div id="responsive-menu" class="header_right_links">
                                         <div class="title-bar-right" data-responsive-toggle="example-menu" data-hide-for="medium">
-                                            <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+                                            <button class="hamburger-icon" type="button" data-toggle="example-menu">
+                                            </button>
                                         </div>
                                         <div class="top-bar" id="example-menu">
                                             <div class="top-bar-right">
@@ -67,15 +68,15 @@
         data: function () {
             return {
                 darkMode: false,
+                current_path : 'home'
             }
         },
         methods: {},
         components: {
         },
-        watch :{
-            darkMode :{
-                handler : function()
-                {
+        watch: {
+            darkMode: {
+                handler: function () {
                     let htmlElement = document.documentElement;
                     if (this.darkMode) {
                         this.$store.commit('SET_APPLICATION_THEME', 'dark');
@@ -86,7 +87,13 @@
                     }
                 }
 
+            },
+            $route(to) {
+                this.current_path = to.name.toLowerCase().trim();
             }
+        },
+        mounted() {
+            this.current_path = this.$route.name.toLowerCase().trim();
         },
     }
 </script>

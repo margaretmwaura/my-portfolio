@@ -28,6 +28,10 @@
    float: right;
   }
 
+  .hamburger-icon{
+   @include hamburger(var(--text-color), var(--text-color), 20px, 16px, 2px, 3);
+  }
+
 
   @media screen and (max-width: 500px) {
    &_links{
@@ -35,7 +39,7 @@
    }
 
    &_icon{
-    margin-top: 8%;
+    margin-top: 3%;
     float: left;
    }
   }
