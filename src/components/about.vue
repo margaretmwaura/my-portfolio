@@ -3,12 +3,12 @@
         <h3>Who is Margaret Mwaura ~ <i>`Maggie`</i> <span>🤔</span></h3>
 
         <p>
-           Hi there 👋 . I am Margaret Mwaura. I currently work as an assistant Software Engineer
+           Hi there 👋 . I am Margaret Mwaura. I currently work as an Assistant Software Engineer
             at Cytonn Investments. I work with vuejs and Laravel a lot. I am currently
             learning Django.
         </p>
         <p>
-            Apart from computers, I really enjoy watching movies and solo travels.
+            Apart from computers, I really enjoy watching comedy movies and solo travels.
             I am also a food lover.
         </p>
 
