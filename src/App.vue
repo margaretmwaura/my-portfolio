@@ -32,7 +32,6 @@
                                             <div class="top-bar-right">
                                                 <ul class="vertical medium-horizontal menu">
                                                     <router-link to="/about" class="header_right_links_routes">About</router-link>
-                                                    <router-link to="/" class="header_right_links_routes">PortFolio</router-link>
                                                 </ul>
                                             </div>
                                         </div>
