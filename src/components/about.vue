@@ -4,8 +4,8 @@
 
         <p>
            Hi there 👋 . I am Margaret Mwaura. I currently work as an Assistant Software Engineer
-            at Cytonn Investments. I work with vuejs and Laravel a lot. I am currently
-            learning Django.
+            at Cytonn Investments. I work with vuejs and Laravel, and Kotlin for personal projects .
+            I am currently learning Django.
         </p>
         <p>
             Apart from computers, I really enjoy watching comedy movies and solo travels.

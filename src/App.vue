@@ -28,7 +28,7 @@
                                             <button class="hamburger-icon" type="button" data-toggle="example-menu">
                                             </button>
                                         </div>
-                                        <div class="top-bar" id="example-menu">
+                                        <div class="top-bar" id="example-menu" data-topbar>
                                             <div class="top-bar-right">
                                                 <ul class="vertical medium-horizontal menu">
                                                     <router-link to="/my-portfolio/" class="header_right_links_routes">Home</router-link>
@@ -79,10 +79,10 @@
                 handler: function () {
                     let htmlElement = document.documentElement;
                     if (this.darkMode) {
-                        this.$store.commit('SET_APPLICATION_THEME', 'dark');
+                        this.store.commit('SET_APPLICATION_THEME', 'dark');
                         htmlElement.setAttribute('theme', 'dark');
                     } else {
-                        this.$store.commit('SET_APPLICATION_THEME', 'light');
+                        this.store.commit('SET_APPLICATION_THEME', 'light');
                         htmlElement.setAttribute('theme', 'light');
                     }
                 }
@@ -93,7 +93,12 @@
             }
         },
         mounted() {
-            this.current_path = this.route.name.toLowerCase().trim();
+            if(this.route){
+                this.current_path = this.route.name.toLowerCase().trim();
+            }else {
+                this.current_path = 'home'
+            }
+
         },
     }
 </script>
