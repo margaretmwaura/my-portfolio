@@ -79,10 +79,10 @@
                 handler: function () {
                     let htmlElement = document.documentElement;
                     if (this.darkMode) {
-                        this.store.commit('SET_APPLICATION_THEME', 'dark');
+                        this.$store.commit('SET_APPLICATION_THEME', 'dark');
                         htmlElement.setAttribute('theme', 'dark');
                     } else {
-                        this.store.commit('SET_APPLICATION_THEME', 'light');
+                        this.$store.commit('SET_APPLICATION_THEME', 'light');
                         htmlElement.setAttribute('theme', 'light');
                     }
                 }
