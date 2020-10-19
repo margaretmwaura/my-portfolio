@@ -31,8 +31,8 @@
                                         <div class="top-bar" id="example-menu">
                                             <div class="top-bar-right">
                                                 <ul class="vertical medium-horizontal menu">
-                                                    <router-link to="/" class="header_right_links_routes">Home</router-link>
-                                                    <router-link to="/about" class="header_right_links_routes">About</router-link>
+                                                    <router-link to="/my-portfolio/" class="header_right_links_routes">Home</router-link>
+                                                    <router-link to="/my-portfolio/about" class="header_right_links_routes">About</router-link>
                                                 </ul>
                                             </div>
                                         </div>
