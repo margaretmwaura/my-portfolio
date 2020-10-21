@@ -16,18 +16,10 @@ new Vue({
   render: h => h(App),
   mounted() {
     // eslint-disable-next-line
-    $(this.$el).ready(function(){
-
-      $(this.$el).foundation();
-
-    });
+    $(this.$el).foundation();
   },
   destroyed() {
     // eslint-disable-next-line
-    $(this.$el).ready(function(){
-
-      $(document).foundation();
-
-    }).destroy();
+    $(this.$el).foundation.destroy();
   },
 }).$mount('#app')
