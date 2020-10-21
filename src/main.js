@@ -1,6 +1,6 @@
 import 'script-loader!../foundation/js/vendor/jquery';
 import 'script-loader!foundation-sites/dist/js/foundation.min';
-
+import 'script-loader!../foundation/js/app';
 import Vue from 'vue'
 import App from './App.vue'
 import VueTypedJs from 'vue-typed-js'
