@@ -28,7 +28,7 @@
                                             <button class="hamburger-icon" type="button" data-toggle="example-menu">
                                             </button>
                                         </div>
-                                        <div class="top-bar" id="example-menu" data-topbar>
+                                        <div class="top-bar" id="example-menu">
                                             <div class="top-bar-right">
                                                 <ul class="vertical medium-horizontal menu">
                                                     <router-link to="/my-portfolio/" class="header_right_links_routes">Home</router-link>
