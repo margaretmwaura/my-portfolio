@@ -108,5 +108,8 @@ module.exports = {
             name: true
         }
     },
-    node: { fs: 'empty' }
+    node: { fs: 'empty' },
+    externals: {
+        foundation: 'Foundation'
+    },
 };
