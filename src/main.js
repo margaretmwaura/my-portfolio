@@ -1,5 +1,5 @@
-import 'script-loader!../foundation/js/vendor/jquery';
-import 'script-loader!foundation-sites/dist/js/foundation.min';
+// import 'script-loader!../foundation/js/vendor/jquery';
+// import 'script-loader!foundation-sites/dist/js/foundation.min';
 
 
 import Vue from 'vue'
