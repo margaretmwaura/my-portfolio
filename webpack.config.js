@@ -11,10 +11,10 @@ module.exports = {
     entry: {
         client: [
             "./src/main.js",
-            "script-loader!./node_modules/foundation-sites/dist/js/foundation.min",
         ],
         vendor: [
             "script-loader!./foundation/js/vendor/jquery",
+            "script-loader!./node_modules/foundation-sites/dist/js/foundation.min",
             "script-loader!./foundation/js/app",
         ]
     },
