@@ -1,3 +1,4 @@
+import 'script-loader!../foundation/js/vendor/jquery';
 import 'script-loader!foundation-sites/dist/js/foundation.min';
 
 
