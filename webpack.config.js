@@ -110,6 +110,7 @@ module.exports = {
     },
     node: { fs: 'empty' },
     externals: {
+        jQuery: 'jQuery',
         foundation: 'Foundation'
     },
 };
