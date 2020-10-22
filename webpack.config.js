@@ -8,11 +8,16 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: [
-        "script-loader!./foundation/js/vendor/jquery",
-        "script-loader!./node_modules/foundation-sites/dist/js/foundation.min",
-        "./src/main.js",
+    entry: {
+        client: [
+            "./src/main.js",
+            "script-loader!./node_modules/foundation-sites/dist/js/foundation.min",
         ],
+        vendor: [
+            "script-loader!./foundation/js/vendor/jquery",
+            "script-loader!./foundation/js/app",
+        ]
+    },
     output: {
         chunkFilename: '[name].[hash].js',
         filename: '[name].[hash].js',
