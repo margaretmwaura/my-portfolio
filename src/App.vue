@@ -33,6 +33,7 @@
                                                 <ul class="vertical medium-horizontal menu">
                                                     <router-link to="/my-portfolio/" class="header_right_links_routes">Home</router-link>
                                                     <router-link to="/my-portfolio/about" class="header_right_links_routes">About</router-link>
+                                                    <router-link to="/my-portfolio/projects" class="header_right_links_routes">Projects</router-link>
                                                 </ul>
                                             </div>
                                         </div>

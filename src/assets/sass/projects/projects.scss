@@ -1,0 +1,18 @@
+.projects{
+  padding-top: 10%;
+  hr{
+    border-top: dotted 4px;
+  }
+
+  h3{
+    font-weight: bolder;
+  }
+  p, h3, hr, h1, h5, h4{
+    color: var(--text-color);
+  }
+
+  &_one{
+    text-align: center;
+    padding-top: 2%;
+  }
+}
