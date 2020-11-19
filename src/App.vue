@@ -63,7 +63,7 @@
 </template>
 
 <script>
-
+    import axios from "axios";
     export default {
         name: 'App',
         data: function () {
@@ -99,6 +99,11 @@
             }else {
                 this.current_path = 'home'
             }
+
+            axios.get('https://api.ipify.org?format=json')
+                .then(response => {
+                    console.log(response.data.ip)
+                });
 
         },
     }

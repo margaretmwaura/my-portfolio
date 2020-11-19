@@ -8,10 +8,8 @@
               @ready="onReady"
       />
                           </span></h3>
-
       <p>The following are the projects that I have been working on with the goal of sharpening my skills
        and also as fun projects</p>
-
       <br>
       <br>
       <h5><i>Tech Stack : Vuejs , Webpack , SASS, HTML</i></h5>
@@ -35,7 +33,6 @@
           </div>
       </div>
       <hr/>
-
       <br>
       <br>
       <h5><i>Tech Stack : Vuejs , Webpack , SASS, HTML</i></h5>
@@ -63,7 +60,6 @@
           </div>
       </div>
       <hr/>
-
       <br>
       <br>
       <h5><i>Tech Stack : Laravel</i></h5>
