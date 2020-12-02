@@ -25,3 +25,4 @@ new Vue({
     $(this.$el).foundation.destroy();
   },
 }).$mount('#app')
+

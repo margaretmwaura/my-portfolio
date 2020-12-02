@@ -4,7 +4,8 @@
            <div class="cell large-1 medium-1 small-0"></div>
            <div class="cell large-10 medium-10 small-12">
                <div class="home_pronounce">
-               <i class="fas fa-volume-up" v-on:click="playNamePronounciation()"></i>
+                   <i class="fas fa-volume-up"  v-if="playing"></i>
+                   <i class="fas fa-volume-down"  v-on:click="playNamePronounciation()" v-else></i>
                </div>
                <vue-typed-js :strings="[' ^1000 Margaret Wanjiru Mwaura', 'Mwaura Margaret Wanjiru']"
                              :backSpeed="50" @onComplete="doSmth()">
@@ -33,14 +34,19 @@
         components: { },
         data: function () {
             return {
-                show: false
+                show: false,
+                playing : false,
             }
         },
         methods: {
             doSmth() {
                 this.show = true;
             },
+            stopped(){
+                console.log("We have been called y'all")
+            },
             playNamePronounciation() {
+                this.playing = true;
                 var msg = new SpeechSynthesisUtterance();
                 var voices = window.speechSynthesis.getVoices();
                 msg.voice = voices[10]; // Note: some voices don't support altering params
@@ -51,13 +57,21 @@
                 msg.text = 'Margaret Wanjiru Mwaura';
                 msg.lang = 'en-US';
 
-                // msg.onend = function(e) {
-                //     console.log('Finished in ' + event.elapsedTime + ' seconds.');
-                // };
+                let _self = this;
+
+                msg.onend = function (e) {
+                    _self.playing = false;
+                };
 
                 speechSynthesis.speak(msg);
+
             }
         },
+        created() {
+            this.$on('stopped',() => {
+                this.playing = false;
+            })
+        }
     }
 </script>
 
