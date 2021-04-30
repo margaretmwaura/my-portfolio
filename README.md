@@ -1,24 +1,8 @@
 # portfolio
+This is the link to my portfolio done using Vuejs and SASS
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## What you will learn
+- How to use the Vue Router
+- How to use Vuex 
+- How to create and re-use components in vuejs
+- How to use SASS
