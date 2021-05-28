@@ -85,6 +85,23 @@
           </div>
       </div>
       <hr/>
+      <br>
+      <h5><i>Tech Stack : Kotlin , Android</i></h5>
+      <br>
+      <div class="grid-x grid-margin-x grid-padding-x">
+          <div class="cell large-6 medium-6 small-12 projects_one">
+              <p>I have been working on android application to utilize the data I got after scrappping the website
+                  mentioned above to create an android application to assist people in learning French.
+              </p>
+          </div>
+          <div class="cell large-6 medium-6 small-12">
+              <br>
+              <p>The link to the github repo:
+                  <a href="https://github.com/margaretmwaura/LanguageTranslator">Code Base</a>
+              </p>
+          </div>
+      </div>
+      <hr/>
   </div>
 </template>
 

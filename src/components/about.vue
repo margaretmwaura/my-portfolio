@@ -3,12 +3,15 @@
         <h3>Who is Margaret Mwaura ~ <i>`Maggie`</i> <span>🤔</span></h3>
 
         <p>
-           Hi there 👋 . I am Margaret Mwaura. I currently work as an Assistant Software Engineer
-            at Cytonn Investments. I work with vuejs and Laravel, and Kotlin for personal projects .
-            I am currently learning Django.
+            Hi there 👋 . I am Margaret Mwaura. I currently work as an Assistant Software Engineer
+            at Cytonn Investments. I work with Vuejs and Laravel for web applications and Java and Kotlin
+            for android application.
+            I use phpunit to write the backend tests and Mocha and chai to write the frontend tests.
+            I have been working on an android app for an upcoming fin-tech startup in Nairobi , here
+            is the link to the app on play store https://play.google.com/store/apps/details?id=com.patriceandala.verypro.
         </p>
         <p>
-            Apart from computers, I really enjoy watching comedy movies and solo travels.
+            Apart from computers, I really enjoy watching comedy movies and travelling with my friends.
             I am also a food lover.
         </p>
 
