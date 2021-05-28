@@ -116,7 +116,7 @@
             return {
                 darkMode: false,
                 delay: 1000,
-                endVal: 3,
+                endVal: 4,
                 options: {
                     useEasing: true,
                     useGrouping: true,
