@@ -3,7 +3,7 @@
         <h3>Who is Margaret Mwaura ~ <i>`Maggie`</i> <span>🤔</span></h3>
 
         <p>
-            Hi there 👋 . I am Margaret Mwaura. I currently work as an Assistant Software Engineer
+            Hi there 👋 . I am Margaret Mwaura. I currently work as a Software Engineer
             at Cytonn Investments. I work with Vuejs and Laravel for web applications and Java and Kotlin
             for android application. I use phpunit to write the backend tests and Mocha and chai to write
             the frontend tests.
